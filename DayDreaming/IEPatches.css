@@ -1,0 +1,10 @@
+* html body .innerbox,
+{
+    width: 460px;
+    word-wrap: break-word;
+}
+
+* html body .comment .content
+{
+    word-wrap: break-word;
+}

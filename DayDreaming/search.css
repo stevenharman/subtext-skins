@@ -1,0 +1,86 @@
+#search /* Subtext Search styles */
+{
+    position: absolute;
+    top: 5px;
+    left: 500px;
+    z-index: 10;
+}
+#search label { }
+#search .searchterm
+{
+    padding: 0;
+	width: 135px;
+	font: 90% verdana, arial, helvetica, sans-serif;
+}
+#search .searchterm:focus
+{
+    border: inset 2px #F1B257;
+}
+#search .searchButton
+{
+    padding: 0;
+    color: #333;
+    text-decoration: none;
+    text-transform: lowercase;
+    font: bold 80% verdana, arial, helvetica, sans-serif;
+}
+#search #search-progress 
+{
+    background: transparent url(../../../images/loaders/subtext-bar-green.gif) no-repeat;
+    height:21px;
+    margin-left:-55px;
+    margin-top:-1px;
+    position:absolute;
+    width:53px
+}
+
+#search #searchResults
+{
+    color: #ccc;
+    margin-top: 5px;
+    width: 200px;
+    border: outset 1px #ddd;
+    background-image: url(Images/overlay.png);
+}
+#search #searchResults h5
+{
+    float: left;
+	font-size: 110%;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+#search #searchResults .searchClose
+{
+    float: right;
+}
+#search #searchResults a
+{
+    color: #B4C835;
+    text-decoration: none;
+}
+#search #searchResults a:hover
+{
+    color: #6CC7DC;
+}
+#search #searchResults ul 
+{
+    margin-left: 1px;
+    clear: both;
+    list-style-image: url(Images/li.gif);
+}
+#search #searchResults ul li
+{
+    margin-bottom: .5em;
+}
+#search #searchResults ul li a
+{
+    color: #ddd;
+	font-size: 90%;
+}
+
+/* ie hack */
+* html #search #searchResults
+{
+    background-image: none;
+	background-color: #000;
+}

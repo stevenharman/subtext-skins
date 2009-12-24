@@ -1,0 +1,484 @@
+/*  
+Theme Name: Ginger Ninja! v2
+Description: The new Ginger Ninja! theme.
+Version: 1.0
+Author: Donny Burnside
+Author URI: http://www.ginger-ninja.net/
+*/
+
+/* Generic Styling */
+
+body 
+{
+	background:url(images/bg-body.png) repeat-x top center #E8F7F9;
+	font-family:"Trebuchet MS" Arial, Helvetica, sans-serif;
+	font-size:62.5%; /* Sets default font size to 10px */
+	color:#222222;
+}
+
+* 
+{
+	margin:0;
+	padding:0;
+}
+
+img { border:0; }
+
+p { margin-bottom:1.25em; }
+
+a 
+{
+	text-decoration:none;
+	color:#B4C835;
+}
+a:hover 
+{
+	text-decoration:none;
+	color:#6CC7DC;
+}
+
+/* Structure */
+
+#container 
+{
+	margin:0 auto;
+	width:700px;
+	background:#ffffff;
+	font-size:1.20em;
+}
+#header 
+{
+    position: relative;
+	height:140px;
+	background:url(images/bg-header_no-feather.jpg) no-repeat;
+}
+#menu 
+{
+	height:35px;
+	line-height:35px;
+	background:url(images/bg-menu.png) repeat-x;
+	padding:0 10px;
+}
+#sidebar 
+{
+	float:right;
+	width:180px;
+	background:#efefef;
+	margin-right:10px;
+}
+.previousNext { width: auto ! important; }
+#content 
+{
+	float:left;
+	width:500px;
+	min-height:400px;
+}
+#postComment,
+#contactForm,
+#commentList
+{
+    clear:left;
+    padding: 5px 10px;
+}
+#footer 
+{
+	clear:both;
+	height:100px;
+	background:url(images/bg-footer.jpg) no-repeat;
+}
+
+/* Menu */
+
+#menu ul { list-style-type:none; }
+#menu li { float:left; }
+#menu li a 
+{
+	padding:0 10px;
+	display:block;
+	color:#ffffff;
+	margin-right:2px;
+}
+#menu li a:hover 
+{
+	background:url(images/bg-menu-hover.png) no-repeat center center;
+}
+
+/* Blogstats */
+#blogstats
+{
+	/* the container for statistics for your blog */
+	float: right;
+	margin: 0;
+	margin-right: 7px;
+	text-align: right;
+	color:#ffffff;
+	padding-left: 50px;
+}
+
+#blogstats dt, #blogstats dd
+{
+	float: left;
+	margin: 0;
+}
+#blogstats dt
+{
+	padding-right: 2px;
+	margin-right: 2px;
+	margin-left: 7px;
+}
+#blogstats dd { margin: 0; }
+
+/* Sidebar */
+
+#sidebar .grouping
+{
+    /* The primary container for each sidebar section
+	(such as Archives, Categories, etc...) */
+	padding-bottom: 1.2em;
+}
+#sidebar .grouping .title
+{
+    /* The title of each sidebar section */
+	font-size: 1.4em;
+	font-weight: bold;
+	text-transform: lowercase;
+	padding-left: .1em;
+	line-height: 1.5em;
+	background-color: #DDD;
+}
+#sidebar ul#tag-cloud { padding-left:0.5em; }
+#sidebar ul,
+#sidebar .body
+{
+	list-style-type:none;
+	background: transparent url(Images/bg-ul.gif) repeat-x top left;
+}
+#sidebar ul#tag-cloud,
+#sidebar #tag-cloud .body
+{
+	 border-bottom:1px solid #dddddd;
+}
+
+#sidebar .body, 
+#sidebar li 
+{
+    padding-left: .5em;
+    border-bottom:1px solid #dddddd;
+}
+#sidebar #tag-cloud .body, 
+#sidebar #tag-cloud li 
+{
+    padding-left: 0;
+    border-bottom: none;
+}
+#sidebar .body 
+{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+#sidebar li a 
+{
+	height:20px;
+	line-height:20px;
+	color:#222222;
+}
+#sidebar #tag-cloud li a { color:#B4C835; }
+
+#sidebar li a:hover,
+#sidebar #tag-cloud li a:hover,
+#sidebar .more-link:hover { color:#6CC4D8; }
+
+#sidebar-bottom 
+{
+	height:20px;
+	background:url(images/bg-sidebar-bottom.gif) no-repeat top center;
+}
+
+#sidebar .more-link
+{
+    background: transparent url(images/arrow.gif) no-repeat center left;
+    color:#222222;
+    margin-left:.5em;
+    padding-left:13px;
+}
+
+/* TagCloud Page */
+
+#content #tag-cloud
+{
+    padding-left:1em;
+}
+
+/* Gallery Layout */
+#gallery
+{
+    
+}
+#gallery .thumbnails,
+.singleImage
+{
+    padding: 10px;
+    padding-top: 0;
+    margin-left: 25px;
+}
+
+/* entryList layout */
+.entryList { clear:both; }
+.entryList .entry { margin-bottom: 1em; }
+.entryList .date,
+.entryList .title,
+#gallery .title,
+.singleImage .title
+{
+    font-weight: bold;
+    font-size: 1.75em;
+    font-style: italic;
+    letter-spacing: -1px;
+    margin-left: 2px;
+}
+.entryList .title,
+#gallery .title { color: #999; }
+.entryList .description,
+#gallery .description
+{
+    padding-left: 10px;
+    color: #ccc;
+    display: block;
+    border-bottom: solid 1px #efefef;
+    margin-bottom: 1em;
+}
+.entryList .date a,
+.entryList .title a { color: #999; }
+.entryList .date a:hover,
+.entryList .title a:hover { color: #6CC7DC; }
+.entryList .date { display: none; }
+
+/* Entries */
+.entryList .entry,
+.entry 
+{
+    clear:both;
+    float: left;
+	padding:5px 10px;
+	text-align:justify;
+	line-height:1.6em;
+	overflow: auto;
+	border-bottom: solid 1px #efefef;
+}
+.entry .body { margin-bottom:1.1em; }
+.entry .h2 { font-size:170%; }
+.entry .h3 { font-size:150%; }
+.entry ul,
+.entry ol
+{
+    margin-top:.2em;
+    margin-bottom:.5em;
+}
+.entry ul,
+.entry ol { margin-left: 1.5em; }
+.entry li { margin-left: 1em; }
+.entry img { margin: 2px 5px; }
+.entry-title 
+{
+	font-size:1.90em;
+	font-weight:bold;
+	letter-spacing:-1px;
+}
+.entry .entry-date 
+{
+	font-size:0.9em;
+	color:#bbb;
+	cursor:default;
+	letter-spacing:1px;
+}
+.entry-comments
+{
+    float: left;
+}
+.entry-comments a 
+{
+	background:url(images/icon-comment.png) no-repeat 0px 2px;
+	padding-left:20px;
+	padding-right:2px;
+}
+.entry-comments a,
+.entry-categories a 
+{
+    color:#6CC7DC;
+}
+.entry-comments a:hover,
+.entry-categories a:hover 
+{
+    color:#B4C835;
+}
+.entry-categories
+{
+    clear:left;
+    float:left;
+}
+.entry blockquote, 
+.comment blockquote
+{
+	padding: 5px 10px 5px 10px;
+	margin: 0 1.5em .75em 1.5em;
+	border: dashed 1px #CCC;
+	background: #efefef url(Images/bg-ul.gif) repeat-x top left;
+	font-size: 95%;
+	font-family: verdana, helvetica, sans-serif;
+	line-height: 1.5em;
+	text-align: left;
+}
+.comment blockquote 
+{
+    clear: both;
+    margin: .5em 1.5em ! important;
+}
+
+/* postComment & contactForm */
+#postComment .title, 
+#contactForm .title
+{
+	
+}
+#postComment dd, 
+#contactForm dd
+{
+	clear: left;
+	margin-left: 0;
+	padding-bottom: 5px;
+}
+#postComment .longBox,
+#contactForm .longBox { width: 200px; }
+#postComment dl { margin-bottom:1em; }
+
+/* commentList */
+.comment
+{
+    margin-bottom: .5em;
+	padding: 5px;
+}
+.comment .title
+{
+    margin-bottom: 3px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.comment .content
+{
+	/* main body of comment */
+	border: dotted 1px #ccc;
+    background-color: #efefef;
+	display: block;
+	padding: .5em;
+	margin-bottom: 5px;
+	overflow: auto;
+}
+.comment .comment-author
+{
+    display: block;
+    margin-left: 20px;
+}
+
+/* Footer */
+#footer-valid
+{
+    float:right;
+    padding-right:20px;
+    margin-top: 84px;
+    font-size: .8em;
+}
+#footer .copyright
+{
+    float:left;
+    padding-left:20px;
+    margin-top:82px;
+}
+#footer-valid,
+#footer .copyright
+{
+	cursor:default;
+	color:#ffffff;
+}
+#footer-valid a,
+#footer .copyright a
+{
+	color:#ffffff;
+	text-decoration:none;
+}
+#footer-valid a:hover,
+#footer .copyright a:hover
+{
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+
+/* Heading's */
+
+#header .titleContainer
+{
+	float: left;
+	text-align: left;
+	position: relative;
+	top: 45px;
+	color:#999;
+}
+#header .titleContainer a:hover { color: #666;}
+#header .titleContainer h1 
+{
+	font-size:2.5em;
+	font-weight:normal;
+	cursor:default;
+	position:relative; 
+	left:30px;
+	letter-spacing:1px;
+	font-style:italic;
+}
+#header .titleContainer h3 
+{
+    clear:left;
+    position:relative;
+    left: 45px;
+}
+
+/* Feed */
+
+#feed 
+{
+	height:25px;
+	width:126px;
+	background:url(images/bg-feed.gif) no-repeat;
+	margin: 0 auto 1em auto;
+	padding-left:26px;
+}
+a.feed-button 
+{
+	display:block;
+    width:100px;
+    height:25px;
+    background:url("images/button-feed.png") 0 0 no-repeat;
+    text-decoration: none;
+}
+a:hover.feed-button 
+{
+	background-position:0 -25px;
+}
+
+/* Extra's */
+
+#ad-top 
+{
+	width:480px;
+	height:72px;
+	background:url(images/bg-ad-top.png) no-repeat;
+	padding:5px;
+	
+	/* To see the content placehoder, just comment out the following style */
+    display: none;
+}
+
+.innerbox
+{
+    overflow: auto;
+}
