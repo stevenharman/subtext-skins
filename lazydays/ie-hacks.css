@@ -1,0 +1,21 @@
+.foo {} /* CSS Validators don't like comments at the start of a file, so.... */
+
+/* Fixes IE bug - IE doesn't correctly apply the style on a:hover so need to mask it */
+.entry .body a:hover img 
+{
+  border: 2px solid #FFF !important;
+  border: 2px solid #8BE6FA;
+}
+
+/* max-width hack for IE since it doesn't understand the valid css property */
+#content,
+#width 
+{
+  width: expression(document.body.clientWidth > 1000 ? "1000px" : "94%"); 
+}
+
+* html #search #search-results
+{
+    background-image: none;
+	background-color: #000;
+}

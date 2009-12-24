@@ -1,0 +1,42 @@
+.csharpcode, .csharpcode pre {
+background-color:#262626;
+color:#FFF;
+font-family:Consolas,"Courier New",Courier,Monospace;
+font-size:small;
+line-height:110%;
+}
+.csharpcode pre {
+margin:0pt;
+}
+.csharpcode .rem {
+color:#9933CC;
+}
+.csharpcode .kwrd {
+color:#CC7832;
+}
+.csharpcode .str {
+color:#A5C25C;
+}
+.csharpcode .op {
+color:#FFF;
+}
+.csharpcode .preproc {
+color:#6897BB;
+}
+.csharpcode .asp {
+background-color:#6897BB;
+}
+.csharpcode .html {
+color:#FFF;
+}
+.csharpcode .attr {
+color:#E8BC64;
+}
+.csharpcode .alt {
+background-color:#404040;
+margin:0pt;
+width:100%;
+}
+.csharpcode .lnum {
+color:#2B91AF;
+}
