@@ -1,0 +1,215 @@
+/*
+*************************************
+	  ela.css "re-K2" v0.9
+**************************************
+	
+	- ela.css for WordPress plugin: Extended Live Archives
+
+	- Style from K2 (http://getk2.com)
+	- Reconstructed by LEMONed (http://www.ilemoned.com)
+
+*/
+
+#af-ela {
+	margin: 20px 0;
+	padding: 0;
+	position: relative;
+	clear: both;
+	color: #5b9cff;
+	}
+
+#af-ela ul {
+	margin: 0 auto 15px;
+	padding: 6px 0;
+	list-style-type: none;
+	}
+
+#af-ela li {
+	margin: 0;
+	padding: 0;
+	}
+
+#af-ela li a,
+#af-ela li a:hover {
+	border: none;
+	background-color: transparent;
+	}
+
+/****************************
+*	Date, Cates, Tags       *
+*****************************/
+#af-ela-menu {
+	font-family: "Lucida Grande", Verdana, Sans-Serif;
+	text-align: left;
+	}
+#af-ela-menu li {
+	display: inline;
+	margin: 0 10px 0 0;
+	padding: 5px 10px;
+	font-size: 120%;
+	font-weight: bold;
+	color: #fff;
+	background: #051236;
+	}
+#af-ela-menu li.selected {
+	background: #5188db;
+	}
+
+/****************************
+*	Years, Months, Categories
+*****************************/
+#af-ela-year,
+#af-ela-month,
+#af-ela-category {
+	clear: both;
+	text-align: left;
+	}
+#af-ela-year li,
+#af-ela-month li,
+#af-ela-category li {
+	display: inline;
+	margin: 0;
+	padding: 5px 10px;
+	line-height: 220%;
+	font-size: 120%;
+	font-weight: bold;
+	background: #051236;
+	color: #fff;
+	}
+#af-ela-year li.selected,
+#af-ela-month li.selected, 
+#af-ela-category li.selected {
+	background: #5188db;
+	}
+
+
+/****************************
+*	Tags                    *
+*****************************/
+#af-ela-tag {
+	clear: both;
+	display: block;
+	text-align: justify;
+	}
+#af-ela-tag li {
+	display: inline;
+/*	word-wrap: break-word; */
+	overflow: auto;
+	margin: 0 !important;
+	margin: 5px;
+	}
+*+html #af-ela-tag li {
+	margin: 5px;
+	line-height: 200%;
+	padding: 0 5px 0 0;
+	}
+
+
+/****************************
+*	Posts                   *
+*****************************/
+#af-ela-post-chrono,
+#af-ela-post-cats,
+#af-ela-post-tags {
+	clear: both;
+	margin: 10px 0;
+	position: relative;
+	}
+
+/****************************
+*	Posts by Date           *
+*****************************/
+#af-ela-post-chrono li {
+	margin: 0;
+	line-height: 200%;
+	background: transparent url(images/separator_rct-cmt.gif) repeat-x left bottom;
+	padding: 5px 10px;
+	position: relative;
+	color: #cce0ff;
+	}
+#af-ela-post-chrono li span {
+	position: absolute;
+	right: 16px;
+	top: 5px;
+	}
+#af-ela-post-chrono li a {
+	line-height: 200%;
+	font-weight: bold;
+	position: absolute;
+	left: 58px;
+	top: 5px;
+/*	display: block; */
+	color: #5188db;
+	}
+#af-ela-post-chrono li a:hover {
+	color: #fff;
+	text-decoration: none;
+	}
+#af-ela-post-chrono li:hover {
+	background: #051236 url(images/separator_rct-cmt.gif) repeat-x left bottom;
+	color: #fff;
+	}
+
+/****************************
+*	Posts by Categories, Tags
+*****************************/
+#af-ela-post-cats li,
+#af-ela-post-tags li {
+	margin: 0;
+	line-height: 200%;
+	background: transparent url(images/separator_rct-cmt.gif) repeat-x left bottom;
+	padding: 5px 10px;
+	position: relative;
+	color: #cce0ff;
+	clear: both;
+	}
+#af-ela-post-cats li span,
+#af-ela-post-tags li span {
+	position: absolute;
+	right: 16px;
+	top: 5px;
+	}
+#af-ela-post-cats li a,
+#af-ela-post-tags li a {
+	font-weight: bold;
+	background: transparent url(images/icon_link.gif) no-repeat left center;
+	padding: 0 0 0 20px;
+	display: block;
+	color: #5188db;
+	}
+#af-ela-post-cats li a:hover,
+#af-ela-post-tags li a:hover {
+	text-decoration: none;
+	color: #fff;
+	}
+#af-ela-post-cats li:hover,
+#af-ela-post-tags li:hover {
+	background: #051236 url(images/separator_rct-cmt.gif) repeat-x left bottom;
+	color: #fff;
+	}
+
+/****************************
+*	Loading                 *
+*****************************/
+span.af-ela-loading,
+img.af-ela-loading {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	float: right;
+	width: 16px !important;
+	width: 0;
+	height: 16px !important;
+	height: 0;
+	border: none;
+	}
+span.af-ela-loading {
+	width: auto !important;
+	height: auto !important;
+	}
+*+html img.af-ela-loading {
+	visibility: hidden;
+	display: none;
+	width: 0;
+	height: 0;
+	}
