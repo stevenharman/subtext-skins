@@ -1,0 +1,15 @@
+/* In these hacks, we're being more specific by naming a parent element so these rules will have overwrite the standard ones */
+#container #blogstats
+{
+    margin-top: 0px;
+}
+
+#header #search
+{
+	left: 525px;
+}
+
+#tag-cloud
+{
+	word-wrap:break-word;
+}

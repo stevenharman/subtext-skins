@@ -1,0 +1,56 @@
+* html body
+{
+	font-size: x-small; /* for IE5/Win */
+	f\ont-size: small; /* for other IE versions */
+	text-align: center;
+}
+
+* html body #blogstats
+{
+	margin-top: 0;
+	margin-right: 3px;
+}
+
+* html #navigation
+{
+	word-wrap: break-word;
+	width:175px;
+}
+
+* html #tag-cloud
+{
+	word-wrap:break-word;
+}
+
+* html #content 
+{ 
+	w\idth: 573;
+	width: 581px; /* production has 3 less pixles */
+	border-right: solid 1px #666;
+	word-wrap: break-word;
+}
+
+/*All IE browsers*/
+* html div.share ul li, * html #nav li
+{
+	border-left: 1px solid #999;
+	padding: 0 0.4em 0 0.4em;
+	margin: -1px 0.4em -1px -0.4em;
+}
+
+* html div.share ul, * html #nav { height: 1%; }
+
+* html div.share ul li
+{
+	display: block;
+	float: left;
+}
+
+/*End hide*/
+/*Mac IE 5*/
+* html div.share ul li:first-child, * html #nav li:first-child { border-left: 0; }
+
+* html div.innerBox .csharpcode
+{
+	overflow: scroll;
+}

@@ -1,0 +1,858 @@
+/*
+Title:		StevenHarman.net Stylesheet for screen
+Author:		Steven Harman
+Updated:	Dec 28, 2006
+Notes:		IE hacks are kept in IEPatches.css
+*/
+
+/*	#################################
+		Common Page Elements
+	#################################*/
+body
+{
+	/*the entire page*/
+	background: #FAFCFD url(Images/bg.jpg) repeat-x;
+	background-color: #333;
+	color: #ddd;
+	text-align: center;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: small;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.clearer
+{
+	clear: both;
+	line-height: 0;
+	height: 0;
+}
+.hide { display: none; }
+img { border: 0px; }
+img.right
+{
+	float: right;
+	padding: 1em;
+	padding-right: 0;
+}
+img.left
+{
+	float:left;
+	padding: 1em;
+	padding-left: 0;
+}
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+acronym, abbr { cursor: help; }
+code { font-size: 120%; }
+table.highlightTable tr.highlight td
+{
+    background: #fefeee;
+}
+
+table.highlightTable tr.highlightAlt td
+{
+    background: #fafae9;
+}
+
+/*	#################################
+		General Layout
+
+        Dark Grey   - #333
+        Med Grey    - #666
+        Light Grey  - #A1A1A1
+        off White   - #ddd
+        Orange      - #F1B257
+        Bright Blue - #69F
+        Putty       - #C2B999
+	#################################*/
+#container
+{
+	position: relative;
+	width: 775px;
+	margin: 0 auto 0 auto;
+}
+#container a,
+#footer a { color: #F1B257; }
+
+#main
+{
+	float: left;
+}
+#footer
+{
+	/* bottom of all pages */
+	clear: both;
+	border-top: solid 1px #666;
+	font-size: .8em;
+	margin: 5px 0 5px 0;
+	padding: 5px 0 0 5px;
+}
+#footer .copyright { float: left; }
+#footer .skinnedBy { float: right; }
+#footer .admin
+{
+	clear:both;
+	float:right;
+	margin-top:.5em;
+}
+#footer .admin a
+{
+	background: transparent url(images/lock.png) no-repeat scroll left top;
+	padding-left:16px;
+	font-size:20px;
+}
+#footer a:hover
+{
+	color:#69F;
+	text-decoration: none;
+}
+
+/*	#################################
+		Header Elements & Layout
+	#################################*/
+#header
+{
+	/* container for the header */
+	background: #000 url(images/header_small.jpg) no-repeat center left;
+	/* background-color: #A5A5A5; */
+	height: 150px;
+	color: #333;
+	border: solid 2px #ddd;
+	border-right-color: #888;
+	border-bottom-color: #888;
+	margin-top: 20px;
+}
+#header #titleContainer
+{
+	float: right;
+	margin: 10px 20px;
+	text-align: left;
+	position: relative;
+}
+#header a { color: #666; }
+#header div#titleWrapper
+{
+    float:right;
+}
+#header .title
+{
+	/* page header title */
+	position: relative;
+	font-size: 180%;
+	font-weight: bold;
+	padding: 0;
+}
+#header .title a:hover
+{
+	color: #69F;
+	text-decoration: none;
+}
+#header .subtitle
+{
+	/* header subtitle */
+	position: relative;
+	margin-top: -3px;
+	font-size: .9em;
+	padding-left: .5em;
+	color: #ddd;
+}
+
+#topNav
+{
+	/* This section holds the top navigation elements (Home, Login, etc...) */
+	height: 15px;
+	margin: 0;
+	margin-bottom: 5px;
+	border-bottom: solid 1px #666;
+	border-left: solid 3px #333;
+	border-right: solid 3px #333;
+	padding: 2px 0 2px 0;
+	color: #C2B999;
+	float: left;
+}
+#slider
+{
+	position: absolute;
+	border-bottom: 2px solid #F1B257;
+	width: 45px;
+	height: 15px;
+	z-index: 2;
+}
+#myLinks
+{
+	/* container for the MyLinks */
+	float: left;
+	list-style: none;
+	margin-left: 5px;
+	text-align: center;
+}
+#myLinks ul
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#myLinks li
+{
+	position:relative;
+	float: left;
+	display: inline;
+	padding: 0 20px 0 0;
+	z-index: 5;
+}
+#myLinks a
+{
+	font-weight: bold;
+	font-size: 90%;
+	color: #C2B999;
+	margin-bottom: 0;
+	text-decoration: none;
+}
+#blogstats
+{
+	/* the container for statistics for your blog */
+	float: right;
+	margin: 0;
+	margin-top: -1em;
+	margin-right: 7px;
+	text-align: right;
+	padding-left: 50px;
+	font-size: .7em;
+}
+
+#blogstats dt, #blogstats dd
+{
+	float: left;
+	margin: 0;
+}
+#blogstats dt
+{
+	padding-right: 2px;
+	margin-right: 2px;
+	margin-left: 7px;
+	border-right: dotted 1px #666;
+}
+#blogstats dd { margin: 0; }
+
+/*	#################################
+		Sidebar Navigation Layout
+	#################################*/
+#navigation
+{
+	/*the section that holds all the links to various parts of the site
+	such as archives, categories, and blogroll */
+	float: right;
+	height: 100%;
+	width: 180px;
+	text-align: left;
+}
+#navigation div.EntryArchives,
+#navigation div.Archives { display:none; }
+.links
+{
+	/* The primary container for each navigation section
+	(such as Archives, Categories, etc...) */
+	padding-bottom: 1.2em;
+}
+.links .title
+{
+	/* The title of each navigation section */
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: lowercase;
+	padding-left: .5em;
+	line-height: 1.5em;
+	background-color: #666;
+	margin-left: -1px;
+}
+.links ul, #news .body
+{
+	/* the styling for unorderd lists inside the links container */
+	/* the body of the news announcement */
+	list-style: none;
+	padding: .5em 0 0 .5em;
+	margin: 0 0 0 1em;
+	font-size: .85em;
+	border: 1px solid #666;
+	border-right: 1px solid #333;
+	border-top-width: 0;
+}
+.links ul:hover, #news .body:hover
+{
+	border: 1px solid #69F;
+	border-top-width: 0;
+}
+/* .links ul { list-style-image: url(Images/li.gif); } */
+.links ul li
+{
+	/* listed items in unordered lists in links */
+	line-height: 1.3em;
+}
+.links #recentComments ul li
+{
+	margin-bottom: .4em;
+}
+#badges ul li
+{
+	margin-bottom: .5em;
+}
+#news
+{
+	/*container for the news announcement */
+}
+
+#tag-cloud
+{
+    padding: .5em 0 .5em .5em;
+	margin: 0 0 0 1em;
+}
+#tag-cloud li
+{
+    padding:0;
+}
+#tag-cloug ul li { line-height:0; }
+#tag-cloud a { color:#C2B999; }
+#tag-cloud a:hover
+{
+    color:#666666;
+    text-decoration:none;
+}
+.more-link
+{
+    background: transparent url(images/arrow.gif) no-repeat center left;
+    margin-left:1em;
+    margin-top:4px;
+    padding:0 0 3px 13px;
+}
+
+/*	#################################
+		Content Layout
+	#################################*/
+#content
+{
+	/* this region is where the main page content will be loaded
+	it can have posts, archives, category listings, etc. */
+	float: left;
+	width: 584px;
+	/*text-align: justify;*/
+	text-align: left;
+	padding: 5px 10px 5px 0;
+	border-right: dotted 1px #666;
+	min-height: 500px;
+}
+#content a:visited { color: #C2B999; }
+#content .update a:visited { color: #F1B257; }
+#content a:hover
+{
+	color: #C2B999;
+	text-decoration: none;
+	border-bottom: dotted 1px #C2B999;
+}
+#content .post .body a:hover,
+#content #tag-cloud a:hover { color: #6699FF; }
+
+div.previousNext
+{
+	font-size: .8em;
+	text-align: center;
+	padding-bottom: .3em;
+}
+#gallery, #singleImage
+{
+	/* container for galleries */
+	padding: 0 .3em 2em .3em;
+	border-left: solid 1px #666;
+	border-bottom: solid 1px #666;
+}
+#gallery .title, 
+#singleImage .title, 
+.posts div.title
+{
+	/* the title of the gallery */
+	font-size: 1.5em;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+#gallery .description, 
+.posts div.description
+{
+	/* the description of the gallery */
+	color: #A5A5A5;
+	padding: 0 0 0 1em;
+	margin: 0;
+	border-bottom: dotted 1px #666;
+	margin-bottom: 1em;
+}
+#gallery .thumbnail { text-align:center; }
+#gallery div.thumbnail a:hover
+{
+	/* specific formatting for each individual thumbnail */
+	text-decoration: none;
+	border-bottom: none;
+}
+#singleImage .image
+{
+	/* image being displayed */	
+	padding-bottom: 1em;
+	width: 571px;
+	overflow: auto;
+}
+#postComment
+{
+	/* the container for the form where people can input comments */
+	padding: 0 5px 0 5px;
+}
+#postComment .title, #contactForm .title
+{
+	/* the title of the comment form */
+	border-bottom: solid 1px #666;
+}
+#postComment dd, #contactForm dd
+{
+	clear: left;
+	margin-left: 0;
+	padding-bottom: 5px;
+}
+#comments #commentsTitle { border-bottom: solid 1px #666; }
+.comment
+{
+	/* container for individual comment */
+	border-left: dashed 1px #666;
+	border-bottom: dashed 1px #666;
+	margin-bottom: 1.5em;
+	padding: 5px;
+}
+.comment .title
+{
+	/* title of comment */
+	margin-bottom: 5px;
+	border-bottom: solid 1px #A5A5A5;
+	font-size: .9em;
+	font-weight: bold;
+}
+.comment .postedBy
+{
+	/* author of comment */
+	margin-bottom: 5px;
+	background: transparent url(images/comment.png) no-repeat top left;
+}
+.comment .postedBy span { padding-left: 20px; }
+.comment .content, #postComment .content
+{
+	/* main body of comment */
+	display: block;
+	border: solid 1px #A5A5A5;
+	background-color: #666;
+	padding: .5em;
+	margin-bottom: 5px;
+	overflow: auto;
+}
+
+#comments .author .content
+{
+	background-color:#222;
+	border-color: #ddd;
+	border-bottom-color:#666666;
+	border-right-color:#666666;
+}
+
+.comment a.removeLink
+{
+	background: transparent url(images/delete.png) no-repeat top left;
+	padding-left: 20px;
+}
+
+.day
+{
+	/* container for the view of posts by day */
+}
+.posts
+{
+	/* container for a list of posts - not used on main page*/
+}
+.post, #contactForm, #content #tag-cloud
+{
+	/* the container for a single post */
+	margin-bottom: 1.5em;
+	padding: 0 .3em .1em .3em;
+	border: solid 1px #666;
+	border-top: dotted 1px #333;
+	border-right: dotted 1px #333;
+}
+.post:hover, 
+#contactForm:hover, 
+#content #tag-cloud:hover
+{
+	/* the container for a single post */
+	border: solid 1px #69F;
+}
+#main .post .title, #contactForm .title
+{
+	/* the title of a post */
+	font-size: 190%;
+	font-weight: bold;
+	font-family: Helvetica, "Times New Roman", Times, serif;
+	letter-spacing: -1px;
+	
+}
+#main .post .title a { color: #69F; }
+#main .post .title a:hover
+{
+	color: #C2B999;
+	border: none;
+}
+#main .post h2 { font-size: 160%; }
+#main .post h3 { font-size: 140%; }
+.post ul.info
+{
+	/* the information of each post */
+	font-size: 1em;
+	list-style: none;
+	margin: 0 0 5px 0;
+	padding: 0;
+	color: #666;
+}
+.post ul.info li
+{
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+.post ul.info li a
+{
+	color: #A5A5A5;
+	border-bottom: dotted 1px #666;
+	padding-left: 20px;
+}
+.post ul.info li a:hover
+{
+	color: #666;
+}
+.post ul.info li:before
+{
+	content: "| "; 
+}
+.post ul.info li:first-child:before
+{
+	content: ""; 
+}
+.post li.permalink span a
+{
+	background: transparent url(images/page_link.png) no-repeat top left;
+}
+.post li.commentCount span a
+{
+	background: transparent url(images/comments.png) no-repeat top left;
+}
+.post li.printIcon a
+{
+	background: transparent url(images/printer.png) no-repeat top left;
+}
+.post .body, #contactForm .body
+{
+	/* the body of a post */
+	overflow: auto;
+	padding: .5em 0 .5em .6em;
+	line-height: 1.5em;
+}
+.post .trackback
+{	
+	/* the trackback / ping area of a post */
+}
+.post blockquote, .comment blockquote
+{
+	padding: 5px 10px 5px 20px;
+	border: dashed 1px #A5A5A5;
+	background: transparent url(images/quotes.gif) no-repeat 2px 2px;
+	font-size: 95%;
+	font-family: verdana, helvetica, sans-serif;
+	line-height: 1.5em;
+	text-align: left;
+}
+.comment blockquote { clear: left; } /* clear the avatar image that is floated left */
+.comment img.avatar { width: auto; }
+.previousNext
+{
+	/* the links that lead to the next and previous story */
+}
+.required
+{
+	/*information that should be marked as required */
+}
+
+/* -------- Share Options ------ */
+div.share
+{
+	background-color:#222;
+	border:1px solid #666666;
+	display:block;
+	margin: 1em 0 .5em 0;
+	text-align:center;
+	width: 99%;
+}
+
+#content div.share a:hover { border-bottom: 0 none; }
+
+div.share span
+{
+	font-weight: bold;
+	display: block;
+	float: left;
+	width: 120px;
+	padding-left: 20px;
+}
+
+div.share h4
+{
+	font-size:.9em;
+	font-style:italic;
+	margin:0 0 .2em 0;
+	padding:0;
+}
+
+
+div.share ul
+{
+	margin: 0 0 5px 0;
+	padding: 0;
+	list-style: none;
+}
+
+div.share ul li
+{
+	display: inline;
+	padding: 0;
+	margin: 0 2px 0 2px;
+	font-size: 100%;
+}
+
+
+/*	#################################
+		Special Styles
+	#################################*/
+
+/* -- {  styles for Google AdSense} ----------- */
+div.adsense_topBanner, 
+div.adsense_botBanner
+{
+	border: solid 1px #333;
+	border-bottom: dashed 1px #666;
+	margin: 5px;
+	padding-bottom: 5px;
+	text-align: center
+}
+div.adsense_topBanner { margin-top: 0; }
+div.adsense_botBanner { margin-top: -1em; }
+
+div.adsense_topBanner .section, 
+div.adsense_botBanner .section
+{
+	margin-top:5px;
+}
+
+/*
+div.adsense_topBanner:hover, 
+div.adsense_botBanner:hover
+{
+	border: dashed 1px #69F;
+}
+*/
+
+div.textlinkAd .title
+{
+	float:left;
+	font-style:italic;
+}
+div.textlinkAd ul
+{
+	border: 0px none;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0pt;
+	overflow: hidden;
+	padding: 0pt;
+}
+
+div.textlinkAd li
+{
+	clear:none;
+	display:inline;
+	float:left;
+	margin:0 0 0 1em;
+	padding:0;
+}
+
+#content .textlinkAd a:hover { color: #6699FF; }
+
+/* -- { corrections, updates, and special styles } ----------- */
+p ins, p del 
+{
+	display: inline;
+}
+
+p.footnote
+{
+	font-size:.8em;
+}
+
+ins
+{
+	text-decoration: underline;
+}
+
+del
+{
+	text-decoration: line-through;
+}
+
+.update /*This is really for the update flag, i.e. the word "UPDATE"; */
+{
+	background-color:#666666;
+	color:#C2B999;
+	padding: 4px 2px;
+}
+
+.smallnote { font-size:.8em; }
+
+.contrast
+{
+	background-color:#FFF;
+	color:#000;
+}
+
+/*
+#content a[rel~="external"]
+{
+	background:transparent url(images/externalLink.gif) no-repeat scroll right top;
+	padding-right:15px;
+	width:12px;
+}
+*/
+
+/* -- { some icons for various download types } ------------ */
+#content a[href$='.doc'], #content a[href$='.docx'], #content a[href$='.rtf'], #content a[href$='.wps']
+{
+	padding-right:20px;
+	background: transparent url(images/page_white_word.png) no-repeat center right;
+}
+#content a[href$='.pdf']
+{
+	padding-right:20px;
+	background: transparent url(images/page_white_acrobat.png) no-repeat center right;
+}
+#content a[href$='.ppt'], #content a[href$='.pptx'], #content a[href$='.pps']
+{
+	padding-right:20px;
+	background: transparent url(images/page_white_powerpoint.png) no-repeat center right;
+}
+#content a[href$='.svg']
+{
+	padding-right:20px;
+	background: transparent url(images/page_white_vector.png) no-repeat center right;
+}
+#content a[href$='.swf'], #content a[href$='.fla'], #content a[href$='.swd']
+{
+	padding-right:20px;
+	background: transparent url(images/page_white_flash.png) no-repeat center right;
+}
+#content a[href$='.txt']
+{
+	padding-right:20px;
+	background: transparent url(images/page_white.png) no-repeat center right;
+}
+#content a[href$='.xls'], #content a[href$='.xlsx'], #content a[href$='.cvs']
+{
+	padding-right:20px;
+	background: transparent url(images/page_white_excel.png) no-repeat center right;
+}
+#content a[href$='.zip'], #content a[href$='.7z'], #content a[href$='.rar']
+{
+	padding-right:20px;
+	background: transparent url(images/page_white_compressed.png) no-repeat center right;
+}
+
+/*	Containing boxes for code, images, etc... */
+div.outerBox
+{
+	float:left;
+	clear:both;
+	padding: 0;
+	margin-bottom: 1em;
+}
+div.innerBox
+{
+	position:relative;
+	padding: 2px;
+	margin: 0;
+	border: solid 1px #ddd;
+	border-right-color: #888;
+	border-bottom-color: #888;
+}
+#lightbox { color: #A1A1A1; }
+
+/*	Code	*/
+div.innerBox .csharpcode
+{
+	background-color: #ffffff;
+	color: #000000;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: auto;
+}
+
+.csharpCode
+{
+	font-size: 90%;
+	color: #000;
+	font-family: "Courier New", Courier, Monospace;
+	background-color: #ffffff;
+}
+.csharpCode pre 
+{ 
+	margin: 0;
+}
+.rem { color: #008000; }
+.kwrd { color: #0000ff; }
+.str { color: #006080; }
+.op { color: #0000c0; }
+.preproc { color: #cc6633; }
+.asp { background-color: #ffff00; }
+.html { color: #800000; }
+.attr { color: #ff0000; }
+.alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.lnum { color: #606060; }
+
+/* HiddenNetwork */
+.hdn_adtitle 
+{
+	font-family: Verdana; 
+	font-size:1em; 
+	font-weight:bold;
+}
+.hdn_adsubtitle 
+{
+	font-family: Verdana; 
+	font-size:.8em; 
+	color:#999999; 
+	font-style:italic;
+}
+.hdn_adline 
+{
+	font-family: Verdana; 
+	font-size:.8em; 
+}
+.hdn_lnks 
+{
+	font-family: Verdana; 
+	font-size:.9em; 
+	font-weight:bold;
+	list-style-image: url(Images/li.gif);
+}

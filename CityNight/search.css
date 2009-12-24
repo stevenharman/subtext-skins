@@ -1,0 +1,97 @@
+/* Subtext Search styles */
+#search
+{
+    clear: right;
+    position: absolute;
+    top: 110px;
+    left: 545px;
+    z-index: 10;
+}
+#search label { }
+#search .searchterm
+{
+    padding: 0;
+	border: inset 2px #ddd;
+	background-color: #ddd;
+	width: 135px;
+	font: 90% verdana, arial, helvetica, sans-serif;
+}
+#search .searchterm:focus
+{
+    border: inset 2px #F1B257;
+}
+#search .searchButton
+{
+    background-color: #666;
+    border: 2px #666 outset;
+    padding: 0;
+    color: #333;
+    text-decoration: none;
+    text-transform: lowercase;
+    font: bold 80% verdana, arial, helvetica, sans-serif;
+}
+#search .searchButton:hover
+{
+    border-style: inset;
+    color: #F1B257;
+}
+
+#search #search-progress 
+{
+    background: transparent url(images/ajax-loader.gif) no-repeat;
+    height:20px;
+    margin-left:-50px;
+    margin-top:4px;
+    position:absolute;
+    width:45px;
+}
+
+#search #searchResults
+{
+    color: #A1A1A1;
+    margin-top: 5px;
+    width: 200px;
+    border: outset 1px #ddd;
+    background-image: url(Images/overlay.png);
+}
+#search #searchResults h5
+{
+    float: left;
+	font-size: 110%;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+#search #searchResults .searchClose
+{
+    float: right;
+}
+#search #searchResults a
+{
+    text-decoration: none;
+}
+#search #searchResults a:hover
+{
+    color: #69F;
+}
+#search #searchResults ul 
+{
+    margin-left: 1px;
+    clear: both;
+    list-style-image: url(Images/li.gif);
+}
+#search #searchResults ul li
+{
+    margin-bottom: .5em;
+}
+#search #searchResults ul li a
+{
+	font-size: 90%;
+	color: #ddd;
+}
+
+/* ie hack */
+* html #search #searchResults
+{
+    background-image: none;
+	background-color: #000;
+}
