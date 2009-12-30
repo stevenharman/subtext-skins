@@ -27,11 +27,9 @@
           <h2>About the author</h2>
           <div>
             <p>
-                <img src="http://stevenharman.net/images/stevenharman_net/stevenharman-headshot-small.png" 
-                  alt="Steven Harman" class="left"/>Steven Harman is a passionate developer who believes 
-                  that writing great software isn't just a job, its a craft.
-              </p>
-            <p><img src="http://farm3.static.flickr.com/2062/1829090230_c096dcd39e_t.jpg" alt="ASP.NET MVP"/></p>
+              <img src="http://stevenharman.net/images/stevenharman_net/stevenharman-headshot-small.png" 
+                alt="Steven Harman" class="left"/>steven harman :: makes sweet software with computers!
+            </p>
             <p>For recent posts and more about me, <a href="#foot" title="Get more!">scroll to the bottom</a>.</p>
           </div>
         </div>

@@ -8,17 +8,17 @@
 	<div class="width33 floatLeft section"><uc1:RecentComments id="RecentComments1" runat="server" /></div>
 	<div class="width33 floatRight section">
 		<h3>About Me</h3>
-		<p>I'm not a Leprechaun, I just play one on <strike>TV</strike> the Internet.</p>
+		<p>steven harman ::</p>
 		<p><a href="http://www.flickr.com/photos/stevenharman/2193333469/" title="Steven Harman">
-			<img src="http://farm3.static.flickr.com/2108/2193340711_9d8def150b_o.jpg" alt="My profile pic!" 
-			class="floatLeft" /></a>Actually, by day I am a software craftsman &amp; engineer at <a href="http://versionone.com/" 
+			<img id="about-pic" src="http://farm3.static.flickr.com/2108/2193340711_9d8def150b_o.jpg" alt="My profile pic!" 
+			class="floatLeft" /></a>software designer and developer at <a href="http://versionone.com/" 
 			title="VersionOne, it's how I pay the bills.">VersionOne, Inc</a>.
 		</p>
-		<p>By night I'm Co-Administrator of the <a title="Subtext Project Website" 
-			href="http://subtextproject.com/">Subtext Project</a>, an Open Source blog engine.</p>
-		<p class="clear">For non-geek friends and family, check out my <a href="http://life.stevenharman.net" 
-			title="My life blog" rel="me">other blog</a>.
-		</p>
+		<p>has a passion for improvement and an addiction to learning.</p>
+		<p>believes the pursuit of beauty yields simplicity.</p>
+		<p>contributes to several <a href="http://github.com/stevenharman" title="github::stevenharman">Open Source projects</a>; uses a lot of them.</p>
+		<p>recipient of a couple Microsoft MVP awards.</p>
+		<p>loves naps!</p>
 	</div>
 	
 	<div id="copyright" class="grey clear">
