@@ -27,7 +27,7 @@
           <h2>About the author</h2>
           <div>
             <p>
-              <img src="http://stevenharman.net/images/stevenharman_net/stevenharman-headshot-small.png" 
+              <img src="http://www.gravatar.com/avatar/3585262a963f04894a749aabccd99a86?s=90" 
                 alt="Steven Harman" class="left"/>steven harman :: makes sweet software with computers!
             </p>
             <p>For recent posts and more about me, <a href="#foot" title="Get more!">scroll to the bottom</a>.</p>
