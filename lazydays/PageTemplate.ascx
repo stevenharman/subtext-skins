@@ -43,6 +43,9 @@
                   <a href='http://theloungenet.com'>Ads by The Lounge</a>
               </p>
           </div>
+          <div id="orcsweb">
+            <a href="http://www.orcsweb.com/hosting/shared/">Managed Windows Shared Hosting</a> by OrcsWeb
+          </div>
         </div>
         <div class="section feed-list"><uc1:SyndicatonLinks ID="SyndicationLinks1" runat="Server" /></div>
         <div class="section"><uc1:news id="News1" runat="server" /></div>
@@ -53,7 +56,6 @@
             <ul>
               <li><a href="http://twitter.com/stevenharman/" title="Send me a Tweet" class="twitter">stevenharman</a></li>
               <li><a href="http://subtextproject.com" title="Subtext Project Website"><img runat="server" alt="Subtext Project" src="~/images/PoweredBySubtext85x33.png" /></a></li>
-              <li><a href="http://sourceforge.net/donate/index.php?group_id=137896" title="Donate to Subtext"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" alt="Support Subtext" /></a></li>
               <li>
                 <div id="AdSense_FireFox" class="AdSense_referrals_FF">
                   <script type="text/javascript">
