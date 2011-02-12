@@ -794,6 +794,12 @@ div.section .morelink
 	background: transparent url(images/icons/page_white_compressed.png) no-repeat center right;
 }
 
+a.github
+{
+	background: transparent url(images/icons/github-20.png) no-repeat center left;
+	padding:0px 0pt 4px 25px;
+}
+
 a.twitter
 {
 	background: transparent url(images/icons/twitter-small.png) no-repeat center left;

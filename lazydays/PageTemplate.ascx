@@ -54,7 +54,8 @@
           <h2>Badges</h2>
           <div>
             <ul>
-              <li><a href="http://twitter.com/stevenharman/" title="Send me a Tweet" class="twitter">stevenharman</a></li>
+              <li><a href="http://twitter.com/stevenharman" title="Stalk me! Or I'll stalk you." class="twitter">stevenharman</a></li>
+              <li><a href="https://github.com/stevenharman" title="Me creating and destroying code, in the open." class="github">stevenharman</a></li>
               <li><a href="http://subtextproject.com" title="Subtext Project Website"><img runat="server" alt="Subtext Project" src="~/images/PoweredBySubtext85x33.png" /></a></li>
               <li>
                 <div id="AdSense_FireFox" class="AdSense_referrals_FF">
