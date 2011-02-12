@@ -33,47 +33,23 @@
             <p>For recent posts and more about me, <a href="#foot" title="Get more!">scroll to the bottom</a>.</p>
           </div>
         </div>
-        <div class="section">
+        <div class="section ads">
           <h2>Sponsors</h2>
-            <div id="adzerk">
-              <div id="adzerk_ad_div">
-                  <!-- The Lounge Ads - script located at bottom of the page -->
-              </div>
-              <p id="adzerk_by">
-                  <a href='http://theloungenet.com'>Ads by The Lounge</a>
-              </p>
-          </div>
-          <div id="orcsweb">
+          <div class="ad orcsweb">
             <a href="http://www.orcsweb.com/hosting/shared/">Managed Windows Shared Hosting</a> by OrcsWeb
           </div>
         </div>
         <div class="section feed-list"><uc1:SyndicatonLinks ID="SyndicationLinks1" runat="Server" /></div>
         <div class="section"><uc1:news id="News1" runat="server" /></div>
-        <div class="section"><uc1:TagCloud ID="tagCloud" runat="server" ItemCount="20" /></div>
         <div class="section badges">
           <h2>Badges</h2>
-          <div>
             <ul>
               <li><a href="http://twitter.com/stevenharman" title="Stalk me! Or I'll stalk you." class="twitter">stevenharman</a></li>
               <li><a href="https://github.com/stevenharman" title="Me creating and destroying code, in the open." class="github">stevenharman</a></li>
               <li><a href="http://subtextproject.com" title="Subtext Project Website"><img runat="server" alt="Subtext Project" src="~/images/PoweredBySubtext85x33.png" /></a></li>
-              <li>
-                <div id="AdSense_FireFox" class="AdSense_referrals_FF">
-                  <script type="text/javascript">
-                    <!--
-                      google_ad_client = "pub-2574483175675865";
-                      google_ad_width = 110;
-                      google_ad_height = 32;
-                      google_ad_format = "110x32_as_rimg";
-                      google_cpa_choice = "CAAQgYOy0QEaCHt_mB0Eu3rIKOP143Q";
-                    //-->
-                  </script>
-                  <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-                </div>
-              </li>
             </ul>
-          </div>
         </div>
+        <div class="section"><uc1:TagCloud ID="tagCloud" runat="server" ItemCount="20" /></div>
       </div>
     </div>
     <!-- 75 percent width column, aligned to the right -->
@@ -86,4 +62,3 @@
 <div id="footer">
   <uc1:footer id="Footer1" runat="server" />
 </div>
-<script type="text/javascript" src="http://theloungenet.com/Server/DOTNETSP/HARMAN/VERT"></script>
