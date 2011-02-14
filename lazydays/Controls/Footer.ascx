@@ -23,9 +23,10 @@
 	
 	<div id="copyright" class="grey clear">
 		<span class="block floatLeft">
-			Copyright &copy;<%= DateTime.Now.Year %> <asp:Literal id="FooterText" runat="server" />
+			Copyright &copy; <asp:Literal ID="currentYear" runat="server" /> <asp:Literal id="FooterText" runat="server" />
 			| 
-			<span class="admin"><a href="<%= Config.CurrentBlog.RootUrl %>admin/" title="Blog Admin">
+			<span class="admin"><a href="~/admin/" runat="server" title="Blog Admin">
+            
 				<img src="~/skins/lazydays/images/icons/lock.png" alt="Admin" runat="server" /></a>
 			</span>
 		</span>
